@@ -1,0 +1,80 @@
+/**/
+#comm{
+	height:2.6em;
+	width:39.8%;
+	border:2px solid black;
+	border-radius:7px;
+	background-color:#96C96F;
+	margin-bottom:2px;
+	
+	float:right;
+	clear:right;
+	
+	font-size:39.5px;	
+	text-align:center;	
+	clear: right;
+}
+
+/**/
+#math_req{
+	height:2.6em;
+	width:39.8%;
+	border:2px solid black;
+	border-radius:7px;
+	background-color:#96C96F;
+	margin-bottom:2px;
+	
+	float:right;
+	clear:right;
+	
+	font-size:39.5px;	
+	text-align:center;	
+}
+
+/**/
+#math_ele{
+	height:2.6em;
+	width:39.8%;
+	border:2px solid black;
+	border-radius:7px;
+	background-color:#96C96F;
+	margin-bottom:2px;
+	
+	float:right;
+	clear:right;
+	
+	font-size:39.5px;	
+	text-align:center;	
+}
+
+/**/
+#sci_req{
+	height:2.6em;
+	width:39.8%;
+	border:2px solid black;
+	border-radius:7px;
+	background-color:#96C96F;
+	margin-bottom:2px;
+	
+	float:right;
+	clear:right;
+	
+	font-size:39.5px;	
+	text-align:center;	
+}
+
+/**/
+#sci_ele{
+	height:2.6em;
+	width:39.8%;
+	border:2px solid black;
+	border-radius:7px;
+	background-color:#96C96F;
+	margin-bottom:2px;
+	
+	float:right;
+	clear: right;
+	
+	font-size:39.5px;	
+	text-align:center;	
+}

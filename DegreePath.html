@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Interactive Degree Path Management System</title>
+		
+        <!--jQuery library-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		
+        <!--Link JS files-->
+        <script type="text/javascript" src="jQuery.js"></script>
+		<script type="text/javascript" src="courseObjectsAndLogic.js"></script>
+      
+        <!--CSS files-->
+		<link type="text/css" rel="stylesheet" href="DP.css"/>
+		<link type="text/css" rel="stylesheet" href="LeftExpandables.css"/>
+		<link type="text/css" rel="stylesheet" href="RightExpandables.css"/>
+		
+	
+	</head>
+	<body>
+	<!--container div-->
+	<div id="container">
+		<!--Main Title-->
+		<span style="font-size:3.85vw">Software Engineering Program</span><span style="font-size:25px"> (122 Credits)</span>
+		
+		<!--Communication and Science Courses Title-->
+		<div id="comm_sci_title">Basic Sciences & Communications</div>
+		
+		<!--General Education Node-->
+		<div id="genEd"><a class="classLink" href="https://catalog.stcloudstate.edu/Catalog/ViewCatalog.aspx?pageid=viewcatalog&catalogid=7&chapterid=6&loaduseredits=False">Liberal Education<br>(11 Goal Areas Remaining)</a></div>
+		<div id="genEdsub">
+			<div class="innerGoalArea" style="float: left;"><p>Goal Area 1: Communication<br>(2 Courses Remain)</p></div>
+			<div class="innerGoalArea" style="float: left;"><p>Goal Area 2: Critical Thinking<br>(1 Course Remains)</p></div>
+			<div class="innerGoalArea" style="float: left;"><p>Goal Area 3: Natural and Physical Sciences<br>(2 Courses Remain)</p></div>
+			<div class="innerGoalArea" style="float: left;"><p>Goal Area 4: Mathmatical/Logical Reasoning<br>(1 Course Remains)</p></div>
+			<div class="innerGoalArea" style="float: left;"><p>Goal Area 5: History & the Social and Behavorial Sciences<br>(2 Courses Remain)</p></div>
+			<div class="innerGoalArea" style="float: left;"><p>Goal Area 6: The Humanities & Fine Arts<br>(2 Courses Remain)</p></div>
+			<div class="innerGoalArea" style="float: left;"><p>Goal Area 7: Human Diversity<br>(1 Course Remains)</p></div>
+			<div class="innerGoalArea" style="float: left;"><p>Goal Area 8: Global Persepective<br>(1 Course Remains)</p></div>
+			<div class="innerGoalArea" style="float: left;"><p>Goal Area 9: Ethical and Civic Responsibility<br>(1 Course Remains)</p></div>
+			<div class="innerGoalArea" style="float: left;"><p>Goal Area 10: People and the Environment<br>(1 Course Remains)</p></div>
+			<div class="innerGoalArea" style="float: left;"><p>Diversity Requirements<br>(1 Course Remains)</p></div>
+		</div>	
+		
+        <!--Computer Science and Networking Courses Outer Node-->
+		<div id="CSCI">
+		  <div>CSCI Courses<br>(<span>*credits*</span> Credits Remaining)</div>
+		</div>
+		<div id="CSCIsub">
+			<div class="innerCourse" id="CSCI201" style="float: left;">CSCI 201</div>
+			<div class="innerCourse" style="float: left;">CSCI 301</div>
+			<div class="innerCourse" style="float: left;">CSCI 310</div>
+			<div class="innerCourse" style="float: left;">CSCI 411</div>
+			<div class="innerCourse" style="float: left;">CSCI 430</div>
+		</div>
+		
+		<!--Software Engineering Core Courses Outer Node-->
+		<div id="SEcore">
+		  <div>SE Core Courses<br>(<span>*credits*</span> Credits Remaining)</div>
+		</div>
+		<div id="SEcoresub">
+			<div class="innerCourse" style="float: left;">SE 101</div>
+			<div class="innerCourse" style="float: left;">SE 221</div>
+			<div class="innerCourse" style="float: left;">SE 231</div>
+			<div class="innerCourse" style="float: left;">SE 240</div>
+			<div class="innerCourse" style="float: left;">SE 245</div>
+			<div class="innerCourse" style="float: left;">SE 460</div>
+			<div class="innerCourse" style="float: left;">SE 465</div>
+			<div class="innerCourse" style="float: left;">SE 470</div>
+			<div class="innerCourse" style="float: left;">SE 475</div>
+			<div class="innerCourse" style="float: left;">SE 480</div>
+			<div class="innerCourse" style="float: left;">SE 444</div>
+			<div class="innerCourse" style="float: left;">SE 340</div>
+			<div class="innerCourse" style="float: left;">SE 341</div>
+			<div class="innerCourse" style="float: left;">SE 490</div>
+			<div class="innerCourse" style="float: left;">SE 491</div>
+		</div>
+
+		<!--Elective Software Engineering Courses(Paths)-->
+		<div id="SEpath">
+		  <div>SE Electives<br>(<span>*credits*</span> Credits Remaining)</div>
+		</div>
+		<div id="SEpathsub">
+			<div class="innerCourse" style="float: left;">CSCI 450</div>
+			<div class="innerCourse" style="float: left;">SE 482</div>
+			<div class="innerCourse" style="float: left;">SE 466</div>
+			<div class="innerCourse" style="float: left;">SE 412</div>
+			<div class="innerCourse" style="float: left;">SE 413</div>
+			<div class="innerCourse" style="float: left;">CSCI 220</div>
+			<div class="innerCourse" style="float: left;">SE 476</div>
+			<div class="innerCourse" style="float: left;">SE 477</div>
+			<div class="innerCourse" style="float: left;">SE 478</div>
+			<div class="innerCourse" style="float: left;">SE 479</div>
+		</div>
+		
+		
+		
+		
+		<!--Communication Courses Outer Node-->
+		<div id="comm">
+		  <div>Communication Courses-Choose One <br>(<span>*credits*</span> Credits Remaining)</div>
+		</div>
+		
+		<!--Required Math Courses Outer Node-->
+		<div id="math_req">
+		  <div>Math Required Courses<br>(<span>*credits*</span> Credits Remaining)</div>
+		</div>
+		
+		
+		<!--Elective Math Courses Outer Node-->
+		<div id="math_ele">
+		  <div>Math Electives-Choose Two<br>(<span>*credits*</span> Credits Remaining)</div>	
+		</div>
+		
+		<!--Required Science Courses Outer Node-->
+		<div id="sci_req">
+		  <div>Basic Science Required Courses<br>(<span>*credits*</span> Credits Remaining)</div>
+		</div>
+		
+		<!--Elective Science Courses Node-->
+		<div id="sci_ele">
+		  <div>Basic Science Elective<br>(<span>*credits*</span> Credits Remaining)</div>
+		</div>
+		
+		<!--total credit counter node-->
+		<div id="totalCount">
+            Total Credits Remaining: <span>122</span> credits
+		</div>
+        
+        <form> 
+            <input id="urlInput" type="text" placeholder="Paste DARS URL Here"  size="50" maxlength="200" autofocus>
+            <input id="urlButton" type="button" value="Submit">
+        </form>
+        <!--add this code to jQuery to recieve input
+    
+            $('#urlButton').click(function() {
+                functionName($('#urlInput').val());
+            });
+
+        -->
+        
+	</div>
+	
+	</body>
+</html>
