@@ -1,0 +1,176 @@
+#container{
+	height:auto; 
+	width:100%;
+	min-width:1400px;
+}
+
+/*Communications and Sciences Title ID*/
+#comm_sci_title{
+	float:right;
+	margin-right: 5%;
+	margin-top:1.25%;
+
+	text-align:center;
+	font-size:2vw;
+}
+
+/*div for help button*/
+#helpButton{
+	float:right;
+	height:1%;
+	width:1.1%;
+	margin-top:0%;
+	margin-right:-27.25%;
+	
+	border:1px solid black;
+	text-align:center;
+	font-size:1vw;
+}
+
+#helpLink{
+	text-decoration:none;
+}
+
+#helpLink a:hover{
+	font-size:1.5em;
+}
+
+/*help box that opens from the button*/
+#helpPop{
+	position:absolute;
+	
+	border:3px solid black;
+	border-radius:5px;
+	height:auto;	
+	width:18%;
+	
+	margin-top:-4.5%;
+	margin-left:80.5%;
+	padding:2.5px;
+	
+	background-color:white;
+	
+	pointer-events:none;
+	opacity:0;
+}
+
+.innerCSCI{
+	height:38.5%;
+	line-height:100px;
+	width:26.5%;
+	border:2px solid black;
+	border-radius:10px;
+
+	text-align:center;
+	font-size:1.8vw;
+}
+
+.innerCore{
+	height:90px;
+	line-height:90px;
+	width:19%;
+	border:2px solid black;
+	border-radius:10px;
+
+	text-align:center;
+	font-size:1.8vw;
+}
+
+.innerEleTitle{
+	height:90px;
+	line-height:40px;
+	width:95%;
+	border:3px solid black;
+	border-radius:0px;
+	
+	margin-top:1%;
+	margin-left:1%;
+	
+	text-align:center;
+	font-size:1vw;
+}
+
+.innerElectives{
+	height:90px;
+	line-height:90px;
+	width:90%;
+	border:2px solid black;
+	border-radius:10px;
+
+	margin-top:3%;
+	margin-left:4%;
+	
+	text-align:center;
+	font-size:1.8vw;
+}
+
+.innerComm{
+	height:90px;
+	line-height:90px;
+	width:38%;
+	border:2px solid black;
+	border-radius:10px;
+
+	text-align:center;
+	font-size:1.8vw;
+	z-index:1;
+}
+
+.innerMathReq{
+	height:90px;
+	line-height:90px;
+	width:38%;
+	border:2px solid black;
+	border-radius:10px;
+
+	text-align:center;
+	font-size:1.8vw;
+	z-index:1;
+}
+
+.innerMathEle{
+	height:90px;
+	line-height:90px;
+	width:38%;
+	border:2px solid black;
+	border-radius:10px;
+
+	text-align:center;
+	font-size:1.8vw;
+	z-index:1;
+}
+
+.innerSciReq{
+	height:90px;
+	line-height:90px;
+	width:38%;
+	border:2px solid black;
+	border-radius:10px;
+
+	text-align:center;
+	font-size:1.8vw;
+	z-index:1;
+}
+
+.innerSciEle{
+	height:100px;
+	line-height:100px;
+	width:90%;
+	border:2px solid black;
+	border-radius:10px;
+
+	text-align:center;
+	font-size:1.8vw;
+	z-index:1;
+}
+
+.classLink{
+	text-decoration:none;
+	color:black;
+}
+
+/*Sets links to be underlined when hovered over*/
+a:hover{
+	text-decoration:underline;
+	/*font-size:32px;*/
+}

@@ -1,0 +1,200 @@
+/*inner Liberal Ed Goal Area containers*/
+.innerGoalArea{
+	height:38.5%;
+	width:75%;
+	border:2px solid black;
+	border-radius:10px;
+	padding-left:1%;
+	padding-right:1%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+
+	text-align:center;
+	font-size:1.8vw;
+	
+	display:table;
+}
+
+.innerGoalArea p{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+/*inner course containers*/
+.innerCourse{
+	height:38.5%;
+	line-height:100px;
+	width:26.5%;
+	border:2px solid black;
+	border-radius:10px;
+
+	text-align:center;
+	font-size:1.8vw;
+}
+
+/*Liberal Education containers*/
+#genEd{
+	height:2.6em; 
+	width:59%; 
+	border:2px solid black;
+	border-radius: 7px;
+	background-color:#A19D9A; 
+	margin-bottom:2px;
+	
+	float:left;
+	
+	font-size:50px;	
+	text-align:center;	
+	
+	cursor:pointer;
+	
+	/*makes text unhighlightable*/
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */	
+}
+
+#genEdsub{
+	height:auto; 
+	width:59%; 
+	border:2px solid black;
+	border-top:1px solid black;
+	border-radius: 2px;
+	margin-top: -5px;
+	margin-bottom:2px;
+	
+	float:left;	
+	
+	background-color:#A19D9A; 
+	display:none;
+}
+
+/*CSCI containers*/
+#CSCI{
+	height:2.6em; 
+	width:59%;
+	border:2px solid black;
+	border-radius:7px;
+	background-color:#99ccff;
+	margin-bottom: 2px;
+	
+	float:left;
+	
+	font-size:50px;	
+	text-align:center;	
+	
+	cursor: pointer;
+	
+	/*makes text unhighlightable*/
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */	
+}
+
+#CSCIsub{
+	height:auto; 
+	width:59%;
+	border: 2px solid black;
+	border-top: 1px solid black;
+	border-radius:2px;
+	margin-top: -5px;
+	margin-bottom: 2px;
+	padding-top: 4px;
+	
+	float:left;
+	
+	background-color:#99ccff;
+	display: none;
+}
+
+/*SEcore containers*/
+#SEcore{
+	height:2.6em;
+	width:59%;
+	border:2px solid black;
+	border-radius:7px;
+	background-color:#66A6EA;
+	margin-bottom:2px;
+	
+	float:left;
+		
+	font-size:50px;	
+	text-align:center;	
+    
+    cursor: pointer;
+	
+	/*makes text unhighlightable*/
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */	
+}
+
+#SEcoresub{
+	height:auto; 
+	width:59%;
+	border: 2px solid black;
+	border-top: 1px solid black;
+	border-radius:2px;
+	margin-top: -5px;
+	margin-bottom: 2px;
+	padding-top: 4px;
+	
+	float:left;
+	
+	background-color:#66A6EA;
+	display: none;
+}
+
+/*SE path containers*/
+#SEpath{
+	height:2.6em;
+	width:59%;
+	border:2px solid black;
+	border-radius:7px;
+	background-color:#99ccff;
+	margin-bottom:2px;
+	
+	float:left;
+	
+	font-size:50px;	
+	text-align:center;	
+    
+    cursor: pointer;
+	
+	/*makes text unhighlightable*/
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */	
+}
+
+#SEpathsub{
+	height:auto; 
+	width:59%;
+	border: 2px solid black;
+	border-top: 1px solid black;
+	border-radius:2px;
+	margin-top: -5px;
+	margin-bottom: 2px;
+	padding-top: 4px;
+	
+	float:left;
+	
+	background-color:#99ccff;
+	display: none;
+}
+
+/*Holds display of the count of total remaining credits*/
+#totalCount{
+	width:100%;
+	
+	float:left;
+	
+	font-size:65px;	
+	text-align:center;	
+}
+
+#urlInput{
+    float:left;
+    clear:both;
+}
+
+#urlButton{
+    float:left;
+}
