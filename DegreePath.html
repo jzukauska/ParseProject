@@ -9,13 +9,21 @@
         <!--Link JS files-->
         <script type="text/javascript" src="jQuery.js"></script>
 		<script type="text/javascript" src="courseObjectsAndLogic.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script>
+			var socket = io.connect('http://localhost'); // connec to server
+			socket.on('news', function (data) { // listen to news event raised by the server
+				console.log(data);
+				socket.emit('my other event', { my: 'data' }); // raise an event on the server
+			});
+		</script>
+		<!----><script type="text/javascript" src = "parse2.js"></script><!---->
       
         <!--CSS files-->
 		<link type="text/css" rel="stylesheet" href="DP.css"/>
 		<link type="text/css" rel="stylesheet" href="LeftExpandables.css"/>
 		<link type="text/css" rel="stylesheet" href="RightExpandables.css"/>
-		
-	
+
 	</head>
 	<body>
 	<!--container div-->
@@ -127,9 +135,10 @@
             Total Credits Remaining: <span>122</span> credits
 		</div>
         
-        <form> 
+        <form>
             <input id="urlInput" type="text" placeholder="Paste DARS URL Here"  size="50" maxlength="200" autofocus>
-            <input id="urlButton" type="button" value="Submit">
+            <input id="urlButton" type="button" value="Submit" onclick= "generalParse() " runat >
+
         </form>
         <!--add this code to jQuery to recieve input
     

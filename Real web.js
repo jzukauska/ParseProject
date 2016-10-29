@@ -1,0 +1,8 @@
+/**
+ * Created by Jake on 10/29/2016.
+ */
+var connect = require('connect');
+var serveStatic = require('serve-static');
+connect().use(serveStatic(__dirname)).listen(8080, function(){
+    console.log('Server running on 8080...');
+});

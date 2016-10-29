@@ -12,17 +12,19 @@ $(document).ready(function(){
     
     //Data structure to hold course info
     //function Course(courseID, courseDepartment, courseNumber, courseName, credits, preReqs, coReqs, available, completion){
-    function Course(name, credits, available, completion){
+    //function deprecated
+     function Course(name, credits, available, completion){
 	   this.name = name;
 	   this.credits = credits;
 	   this.available = available;
        this.completion = completion;
     }
-    
+
+
     //Create topicArea objects
-    var degree = new TopicArea("Software Engineering", 122);
+    var degree = new TopicArea("poopSoftware Engineering", 122);
     var genEd = new TopicArea("General Education", 22);
-    var CSCI = new TopicArea("CSCI", 17);
+    var CSCI = new TopicArea("CSCI", 18);
     var SEcore = new TopicArea("Software Engineering Core", 41);
     var SEpath = new TopicArea("Software Engineering Electives", 9);
 
@@ -37,6 +39,7 @@ $(document).ready(function(){
     var CSCI201 = new Course("CSCI 201", 3, true, false);
 
 
+
     //*******************************************************************
 
     
@@ -44,6 +47,8 @@ $(document).ready(function(){
     
     function populateHTML()
     {
+
+
         $("#totalCount span").text(degree.credits);
         $("#CSCI div span").text(CSCI.credits);
         $("#SEcore div span").text(SEcore.credits);

@@ -1,6 +1,7 @@
 console.log("Start jQuery.js");
 $(document).ready(function(){
 
+
 //expands LibEd course list
 	$('#genEd').click(function(){
 		if($('#genEdsub').css('display') == 'none')

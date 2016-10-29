@@ -6,30 +6,47 @@ var fs = require('fs');
 var app = express();
 var port = 8000;
 
-var url = "https://webproc.mnscu.edu/darsia/bar?jobQSeqNo=9577989&job_id=2016102506265110";
-var urlSplit = url.split("&");
-var jobQSeqNo = parseInt(urlSplit[0].replace(/\D+/g, ''));
-var jobId = parseInt(urlSplit[1].replace(/\D+/g, ''));
-
-var newUrl = "https://webproc.mnscu.edu/darsia/printerfriendly?jobQSeqNo=" + jobQSeqNo + "&job_id="+jobId+"&";
+var workingUrl;
+var arr;
 
 
-request(newUrl,function (err,resp,body) {
-    var $ = cheerio.load(body);
-    var arr = [];
-    $('[class$=SubrequirementCourses]').each(function(index, elem){
-        arr.push("span" +index+ "_" + $(this).text());
-    });
+function parseUrl(url){
+//alert ("Url:" + url);
+    var urlSplit = url.split("&");
+    var jobQSeqNo = parseInt(urlSplit[0].replace(/\D+/g, ''));
+    var jobId = parseInt(urlSplit[1].replace(/\D+/g, ''));
+    var newUrl = "https://webproc.mnscu.edu/darsia/printerfriendly?jobQSeqNo=" + jobQSeqNo + "&job_id="+jobId+"&";
+    return newUrl;
 
-    console.log(arr);
+}
 
-   /* var file = fs.createWriteStream('./downloads/doc.html')
+function generalParse() {
 
-    stringy = JSON.stringify(arr.join(" ,\n "));
+    workingUrl = parseUrl(document.getElementById('urlInput').value);
 
-    file.write(stringy);*/
+    alert(workingUrl);
 
-})
+    request(workingUrl,function (err,resp,body) {
+        var $ = cheerio.load(body);
+        arr = [];
+        $('[class$=SubrequirementCourses]').each(function(index, elem){
+            arr.push("span" +index+ "_" + $(this).text());
+        });
+
+        console.log(arr);
+
+        /* var file = fs.createWriteStream('./downloads/doc.html')
+
+         stringy = JSON.stringify(arr.join(" ,\n "));
+
+         file.write(stringy);*/
+
+    })
+
+
+}
+
+
 
 
 app.listen(port);
